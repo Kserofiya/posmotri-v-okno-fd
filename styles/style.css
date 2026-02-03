@@ -310,11 +310,10 @@ ol {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical; 
+  -webkit-box-orient: vertical;
 }
 
 .content__video-card-thumbnail {
   width: 50%;
   height: 100px;
 }
-
