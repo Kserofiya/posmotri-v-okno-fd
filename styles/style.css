@@ -65,14 +65,15 @@ ol {
 }
 
 .button {
-  padding: 6px 75px;
+  padding: 6px;
+  width: 195px;
   border: 1px solid #fff;
   background-color: transparent;
+  font-family: inherit;
   font-size: 18px;
   font-weight: 700;
   color: #fff;
   cursor: pointer;
-  transition: all 0.5s;
 }
 
 .button:hover {
@@ -90,6 +91,11 @@ ol {
 
 .button:focus-visible {
   outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.more-button {
+  width: 100%;
 }
 
 .visually-hidden {
@@ -135,11 +141,13 @@ ol {
 }
 
 .search-form__textfield {
+  width: 225px;
   border: 1px solid #fff;
   border-left: none;
   border-right: none;
   background-color: transparent;
-  color: #fff;
+  color: currentColor;
+  font-family: inherit;
   font-size: 18px;
   font-weight: 400;
   appearance: none;
@@ -154,8 +162,6 @@ ol {
 }
 
 .search-form__textfield::placeholder {
-  font-size: 16px;
-  font-weight: 400;
   color: rgb(255 255 255 / 0.7);
 }
 
@@ -244,7 +250,6 @@ ol {
 
 .content__list-item {
   padding: 3px;
-  transition: all 0.5s;
 }
 
 .content__card-link {
@@ -301,6 +306,11 @@ ol {
   font-size: 18px;
   font-weight: normal;
   line-height: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical; 
 }
 
 .content__video-card-thumbnail {
